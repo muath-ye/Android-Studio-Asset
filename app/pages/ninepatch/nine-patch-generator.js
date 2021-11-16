@@ -214,7 +214,7 @@ function fillRectImageData(ctx, colorArray, x, y, w, h) {
   // This is necessary because fillRect() and other drawing methods have weird
   // alpha channel precision issues
   // see https://stackoverflow.com/questions/22384423/canvas-corrupts-rgb-when-alpha-0
-  // see https://github.com/romannurik/AndroidAssetStudio/issues/196
+  // see https://github.com/muath-ye/Android-Studio-Asset/issues/196
   let imgData = ctx.createImageData(w, h);
   for (let i = 0; i < w * h; i++) {
     imgData.data[i * 4] = colorArray[0];
